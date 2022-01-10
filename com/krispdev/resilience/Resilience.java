@@ -87,7 +87,7 @@ public class Resilience {
 	
 	public void start(){
 		//Utils.setSessionData("", "");
-		//getWrapper().getMinecraft().session = new Session("NoahGarliot", "", "");
+		//getWrapper().getMinecraft().session = new Session("", "", "");
 		
 		String result = Utils.sendGetRequest("http://resilience.krispdev.com/isUser.php?ign="+getInvoker().getSessionUsername());
 		if(!result.equals("err")){
